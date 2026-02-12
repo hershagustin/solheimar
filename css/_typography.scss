@@ -1,0 +1,49 @@
+@use 'colours' as *;
+h1,
+h4 {
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2.25rem);
+}
+
+h2, 
+h3 {
+    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 2.0833rem + 2.0833vw, 4.6875rem);
+}
+
+h5 {
+    font-size: 1.0625rem;
+    font-size: clamp(1.0625rem, 0.9792rem + 0.4167vw, 1.5rem);
+}
+
+.banner {
+    p:first-of-type {
+        font-size: 1.5rem;
+    }
+}
+
+.itinerary {
+    h3 {
+        font-size: 3.375rem;
+        font-size: clamp(3.375rem, 1.875rem + 7.5vw, 11.25rem);
+    }
+    h4 {
+        padding: 1.5rem 0;
+    }
+    p:first-of-type{
+        font-size: 1.0625rem;
+        font-size: clamp(1.0625rem, 0.9792rem + 0.4167vw, 1.5rem);
+    }
+}
+
+.tour {
+    p:first-of-type {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+}
+
+footer h3 {
+    font-size: 1.5rem
+}
+

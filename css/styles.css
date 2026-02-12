@@ -1,0 +1,543 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-size: 1rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+}
+
+footer h3 {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+h1,
+h4 {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2.25rem);
+}
+
+h2,
+h3 {
+  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 2.0833rem + 2.0833vw, 4.6875rem);
+}
+
+h5 {
+  font-size: 1.0625rem;
+  font-size: clamp(1.0625rem, 0.9792rem + 0.4167vw, 1.5rem);
+}
+
+.banner p:first-of-type {
+  font-size: 1.5rem;
+}
+
+.itinerary h3 {
+  font-size: 3.375rem;
+  font-size: clamp(3.375rem, 1.875rem + 7.5vw, 11.25rem);
+}
+.itinerary h4 {
+  padding: 1.5rem 0;
+}
+.itinerary p:first-of-type {
+  font-size: 1.0625rem;
+  font-size: clamp(1.0625rem, 0.9792rem + 0.4167vw, 1.5rem);
+}
+
+.tour p:first-of-type {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+}
+
+header {
+  background-color: #101828;
+}
+header .inner-container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header h1,
+header .sign-in {
+  padding: 1rem;
+}
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+header a:hover {
+  color: #F6B53B;
+}
+header svg {
+  width: 2rem;
+  color: #FFFFFF;
+}
+header button {
+  border: none;
+  padding: 0.5rem;
+  background-color: #101828;
+}
+header button:hover {
+  background-color: #F6B53B;
+}
+header .search-form {
+  max-width: 17.5rem;
+  padding: 0 0 0 0.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.5625rem;
+}
+header .search-form {
+  display: flex;
+  align-items: center;
+  border: 0.0625rem solid #F9FAFB;
+  border-radius: 0.5rem;
+}
+header .search-form input {
+  background-color: #101828;
+  border: none;
+  flex: 1;
+  min-width: 0;
+}
+header .search-input {
+  text-transform: uppercase;
+  color: #D1D5DC;
+}
+header .search-btn {
+  background-color: #6A7282;
+  border: none;
+  border-radius: 0.5rem;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav a {
+  padding: 1rem;
+  display: inline-block;
+}
+header nav li {
+  margin: 0.5rem 0;
+}
+
+nav {
+  display: none;
+  flex: 1 0 100%;
+}
+
+.show-nav {
+  display: block;
+}
+
+.banner {
+  background: url(../img/hero-bg.avif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 75rem;
+  padding: 5rem 1.5rem;
+}
+.banner .banner-content {
+  max-width: 44.125rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner h2 {
+  color: #030712;
+}
+.banner p {
+  text-align: left;
+  padding: 1.5rem 0;
+  color: #101828;
+}
+.banner .btn-a {
+  background-color: #F9FAFB;
+  color: #1E2939;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px;
+  margin: 0.5rem;
+  display: inline-block;
+  border: none;
+  border-radius: 80px;
+  margin: 10px;
+  width: 100%;
+  max-width: 320px;
+  margin-top: 17.875rem;
+}
+.banner .btn-a:hover {
+  background-color: #101828;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+.banner .btn-b {
+  background-color: #F6B53B;
+  color: #1E2939;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px;
+  margin: 0.5rem;
+  display: inline-block;
+  border: none;
+  border-radius: 80px;
+  margin: 10px;
+  width: 100%;
+  max-width: 320px;
+}
+.banner .btn-b:hover {
+  background-color: #101828;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+
+.tour {
+  background: url(../img/topography-bg.avif) no-repeat;
+  background-size: cover;
+  background-color: #1E2939;
+  height: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 8rem 1.5rem;
+  color: #F9FAFB;
+}
+.tour .tour-content {
+  padding-bottom: 1rem;
+}
+.tour img {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.itinerary {
+  background-color: #F3F4F6;
+  color: #101828;
+  padding: 8rem 1.5rem;
+}
+.itinerary p {
+  color: #364153;
+  padding-left: 3.125rem;
+}
+.itinerary svg {
+  width: 1.5rem;
+}
+.itinerary .flex {
+  display: flex;
+  gap: 2rem;
+}
+.itinerary .flex p {
+  padding-left: 0;
+}
+
+.discount {
+  background: url(../img/topographyvector.avif) no-repeat;
+  background-color: #1E2939;
+  height: auto;
+  width: auto;
+  color: #FFFFFF;
+  align-items: center;
+  padding: 8rem 1.5rem;
+}
+.discount p {
+  padding: 1rem 0;
+}
+.discount .btn-b {
+  background-color: #F6B53B;
+  color: #1E2939;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px;
+  margin: 0.5rem;
+  display: inline-block;
+  border: none;
+  border-radius: 80px;
+  margin: 10px;
+  width: 100%;
+  max-width: 320px;
+  margin: 2rem 0;
+}
+.discount .btn-b:hover {
+  background-color: #101828;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+.discount .discount-form div {
+  padding: 0.5rem 0;
+}
+.discount .discount-form div .textbox {
+  height: 3rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+@media (width > 800px) {
+  header .main-nav {
+    order: 1;
+  }
+  header h1 {
+    order: 2;
+  }
+  header .header-wrappper {
+    order: 3;
+  }
+  header .sign-in {
+    order: 4;
+  }
+  header .search-form {
+    width: 100%;
+  }
+  header nav {
+    display: block;
+  }
+  header .menu-btn {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav {
+    flex: 0 0 auto;
+  }
+  .banner {
+    height: 51.875rem;
+  }
+  .tour {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .tour .tour-content {
+    grid-column: 1/3;
+    grid-row: 1/-1;
+  }
+  .tour img:first-of-type {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .tour img:nth-of-type(2) {
+    grid-column: 4/-1;
+    grid-row: 1/3;
+  }
+  .tour img:nth-of-type(3) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .tour img:nth-of-type(4) {
+    grid-column: 4/-1;
+    grid-row: 2/3;
+  }
+  .tour img:last-of-type {
+    grid-column: 3/4;
+    grid-row: 3/-1;
+  }
+  .discount {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .discount .content {
+    max-width: 50%;
+  }
+  .discount .textbox {
+    max-width: 100%;
+  }
+  footer .footer-links {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width > 1200px) {
+  .tour {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+  }
+  .tour .tour-content {
+    max-width: 36.375rem;
+    height: 17.3125rem;
+    grid-column: 6/11;
+    grid-row: 3/6;
+  }
+  .tour img:first-of-type {
+    grid-column: 1/3;
+    grid-row: 2/5;
+  }
+  .tour img:nth-of-type(2) {
+    grid-column: 3/5;
+    grid-row: 5/7;
+  }
+  .tour img:nth-of-type(3) {
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+  .tour img:nth-of-type(4) {
+    grid-column: 8/10;
+    grid-row: 6/-1;
+  }
+  .tour img:last-of-type {
+    grid-column: 11/-1;
+    grid-row: 5/7;
+  }
+  .itinerary {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .itinerary h3 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    grid-column: 2/span 3;
+    text-align: center;
+  }
+  .itinerary .itinerary-content {
+    grid-column: 5/span 12;
+  }
+  .discount .name {
+    display: flex;
+    gap: 1rem;
+  }
+  footer .footer-content {
+    display: flex;
+    gap: 1rem;
+  }
+  footer .footer-links {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+footer {
+  padding: 8rem 2rem;
+  background-color: #101828;
+  gap: 2rem;
+  color: #FFFFFF;
+}
+footer .footer-about-us,
+footer .footer-resources,
+footer .footer-help,
+footer .footer-follow-us,
+footer .footer-contact {
+  padding: 2rem;
+}
+footer h2,
+footer a {
+  color: #F9FAFB;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: #F6B53B;
+}
+footer p {
+  color: #E5E7EB;
+  padding-top: 2rem;
+}
+footer img {
+  width: 1.5rem;
+}
+footer .flex {
+  display: flex;
+  gap: 1rem;
+}
+footer .footer-follow-us div {
+  padding: 0.25rem;
+}/*# sourceMappingURL=styles.css.map */

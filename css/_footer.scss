@@ -1,0 +1,45 @@
+@use 'colours' as *;
+footer {
+    padding: 8rem 2rem;
+    background-color: $grey-900;
+    gap: 2rem;
+    color: $white;
+
+    .footer-about-us,
+    .footer-resources,
+    .footer-help,
+    .footer-follow-us,
+    .footer-contact {
+        padding: 2rem;
+    }
+
+    h2,
+    a {
+        color: $grey-50
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $fire;
+    }
+    p {
+    color: $grey-200; 
+    padding-top: 2rem
+    }
+
+    img {
+    width: 1.5rem;
+    }
+    .flex {
+        display: flex;
+        gap: 1rem;
+    }
+    .footer-follow-us div{
+        padding: 0.25rem;
+    }
+}
+
+
